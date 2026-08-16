@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Run Tests') {
             steps {
-                bat 'mvn clean test -Dheadless=true'
+                bat 'mvn clean test -Dheadless=true -Dwebdriver.chrome.driver="C:\\ProgramData\\chromedriver\\chromedriver.exe"'
             }
         }
     }
